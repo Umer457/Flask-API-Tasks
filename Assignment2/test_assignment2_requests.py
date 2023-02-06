@@ -24,6 +24,6 @@ def test_not_get_info():
         response_data = response.json()
         assert response_data == {'Users': [{'email': 'umer.nadeem@gmail.com', 'name': 'Umer Nadeem'},
                                            {'email': 'usamarashid@gmail.com', 'name': 'Usama Rashid'}]}
-    except Exception as erroe:
+    except Exception as error:
         print("Error parsing JSON response:", error)
 
